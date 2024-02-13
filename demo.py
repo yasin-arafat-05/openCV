@@ -1,13 +1,13 @@
-import cv2 as cv
+import numpy as np
 
-img = cv.imread("assest/python.jpg")
+pts = np.array([[100,120],[110,130],[130,150],[150,170]])
 
-img_size = cv.resize(img,(600,400))
+print(pts.shape)
 
-cv.imshow("demo windows",img_size)
+print(pts)
 
-k = cv.waitKey(0)
+print()
 
-if k==ord('q'):
-    cv.destroyAllWindows()
+pts.reshape((-1,1,2))
 
+print(pts)
