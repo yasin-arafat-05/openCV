@@ -84,3 +84,15 @@ print()
 print(f"Data type of:  {arr_test} : {arr_test.dtype}")
 print()
 print()
+
+# __________________ Change the Dtype of an existing array element  ___________________
+arr_one_test = arr_test.astype(dtype=np.int8)
+print(f"Data type of:  {arr_one_test} : {arr_one_test.dtype}")
+print()
+print()
+
+# __________________ Change the Dtype of an existing array element  ___________________
+print(f"Minimum:  {arr_one_test.min()} \n maximum: {arr_one_test.max()}")
+print()
+print()
+
