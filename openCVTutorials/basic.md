@@ -45,12 +45,34 @@
     - objdetect
     - features2d
     - calib3d
-    
+<br><br>
+
 # Lecture-04:
+### **Application:**
+![photoOne](/openCVTutorials/photo/photoOne.jpeg)
+![photoTwo](/openCVTutorials/photo/photoTwo.jpeg)
+![photoThree](/openCVTutorials/photo/photoThree.jpeg)
+<br><br>
+
 # Lecture-05:
+### **Image:**
+![photoFour](/openCVTutorials/photo/photoFour.jpeg)
+![photoFive](/openCVTutorials/photo/photoFive.jpeg)
+<br><br>
+
 # Lecture-06:
+### **Color Spaces:**
+![photoSix](/openCVTutorials/photo/photoSix.jpeg)
+<br><br>
+
 # Lecture-07:
+### Numpy-1
+<br><br>
+
 # Lecture-08:
+### Numpy-2
+<br><br>
+
 # Lecture-09:
 # Lecture-10:
 # Lecture-11:
