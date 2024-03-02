@@ -27,10 +27,14 @@
 
     - **DNN:** Deep Neural Network.
 
-    - **ML:** 
-    - video
-    - highgui
-    - flann
+    - **ML:** Machine Learning uses: Regression task, Clustering tasks in images, anomaly detection and classicifation task.
+
+    - **Video:** USED FOR, Video analysis including background subtraction, motion estimation and object-tracking algorithrms.
+
+    - **highgui:** A high level UI module use for, Create and manipulate windows that can display images. Add trackbars to the windows, keyboard commands and handle mouse eveents.
+
+    - **flann:** This moduleis used for 2D features framework. Thisi module includes feature detectors, descriptors and descriptor matchers.
+    
     - photo
     - stiching
     - shape 
