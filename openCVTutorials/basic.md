@@ -5,7 +5,11 @@
 
 
 # Lecture-01:
+- #### Introduction of the course:
+
 # Lecture-02:
+-   #### AI vs DL vs ML vs Computer-Vision:
+
 # Lecture-03:
 # Lecture-04:
 # Lecture-05:
