@@ -82,6 +82,12 @@
 <br>
 
 ### **sys.argv[]:**
+`SYS: System-specific parameters and functions.`
+python test.py (parameter) যা ইচ্ছে তাই দিব এইগুলো argv[] এই  লিস্ট এর মধ্যে জমা হবে ।  
+যেমনঃ এই খানে, শুরুতে filename then parameter গুলো সেভ হবে । 
+
+### **Deactivate: venv**
+`deactivate`
 
 # Lecture-10:
 # Lecture-11:
