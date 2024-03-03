@@ -137,7 +137,7 @@ $\[ y = x' \sin \theta + y' \cos \theta \quad (9) \]$
 
 In matrix form:
 
-$\[ \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} \cos \theta & -\sin \theta \\ \sin \theta & \cos \theta \end{bmatrix} \begin{bmatrix} x' \\ y' \end{bmatrix} \quad (10) \]$
+$\[ \begin{bmatrix}$ $x \\ y$ $\end{bmatrix}$ = $\begin{bmatrix}$ $\cos$ $\theta$ & -$\sin$ $\theta$ $\\$ $\sin$ $\theta$ & $\cos \theta \end{bmatrix}$ $\begin{bmatrix} x' \\ y' \end{bmatrix} \quad (10) \]$
 
 These equations describe the transformation and its inverse in a 2D space after a counterclockwise rotation by an angle $\(\theta\)$.
 
