@@ -74,6 +74,15 @@
 <br><br>
 
 # Lecture-09:
+### **Virtual Environment:**
+`A Python virtual environment (venv) is simply a directory with a particular file structure.`
+<br>
+ধরি, আমি কোন প্রজেক্ট করবো সেখানে, একজায়গায় আমার python_openCV এর  4.8.0 আর অন্য project এ 4.9.1 লাগবে । 
+এই ক্ষেত্রে আমাদের দুটি প্রজেক্টের dependency আলাদা আলাদা তাই  এক্ষেত্রে আমাদের virtual environment create করে কাজ করতে হবে । 
+<br>
+
+### **sys.argv[]:**
+
 # Lecture-10:
 # Lecture-11:
 # Lecture-12:
