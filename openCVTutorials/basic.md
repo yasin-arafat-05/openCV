@@ -102,44 +102,65 @@ python test.py (parameter) যা ইচ্ছে তাই দিব এইগ�
 Certainly! Let's derive the equations for a counterclockwise rotation in two dimensions using markdown language.
 
 ### Derivation of 2D Rotation Equations
-
-$In the xy system, a point P is represented by polar coordinates \((r, \alpha)\). In the x'y' system, after a counterclockwise rotation by an angle \(\theta\), the polar coordinates become \((r, \alpha - \theta)\)$.
+<br>
+In the xy system, a point P is represented by polar coordinates $\((r, \alpha)\)$. In the x'y' system, after a counterclockwise rotation by an angle $\(\theta\)$, the polar coordinates become $\((r, \alpha - \theta)\)$.
 
 Using trigonometric functions, the coordinates in the xy system are:
 
-$\[ x = r \cos \alpha \quad (1) \]$
+$\[
+x = r \cos \alpha \quad (1)
+\]$
 
-$\[ y = r \sin \alpha \quad (2) \]$
+$\[
+y = r \sin \alpha \quad (2)
+\]$
 
 Now, applying trigonometric identities for differences, the coordinates in the x'y' system are:
 
-$\[ x' = r \cos(\alpha - \theta) = r \cos \alpha \cos \theta + r \sin \alpha \sin \theta \quad (3) \]$
+$\[
+x' = r \cos(\alpha - \theta) = r \cos \alpha \cos \theta + r \sin \alpha \sin \theta \quad (3)
+\]$
 
-$\[ y' = r \sin(\alpha - \theta) = r \sin \alpha \cos \theta - r \cos \alpha \sin \theta \quad (4) \]$
+$\[
+y' = r \sin(\alpha - \theta) = r \sin \alpha \cos \theta - r \cos \alpha \sin \theta \quad (4)
+\]$
 
 Substituting equations (1) and (2) into equations (3) and (4), we get:
 
-$\[ x' = x \cos \theta + y \sin \theta \quad (5) \]$
+$\[
+x' = x \cos \theta + y \sin \theta \quad (5)
+\]$
 
-$\[ y' = -x \sin \theta + y \cos \theta \quad (6) \]$
+$\[
+y' = -x \sin \theta + y \cos \theta \quad (6)
+\]$
 
 These equations can be represented in matrix form as:
 
-$\[ \begin{bmatrix} x' \\ y' \end{bmatrix} = \begin{bmatrix} \cos \theta & \sin \theta \\ -\sin \theta & \cos \theta \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} \quad (7) \]$
+$\[
+\begin{bmatrix} x' \\ y' \end{bmatrix} = \begin{bmatrix} \cos \theta & \sin \theta \\ -\sin \theta & \cos \theta \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} \quad (7)
+\]$
 
 This matrix equation represents the standard form of a 2D rotation transformation.
 
 The inverse transformation is given by:
 
-$\[ x = x' \cos \theta - y' \sin \theta \quad (8) \]$
+$\[
+x = x' \cos \theta - y' \sin \theta \quad (8)
+\]$
 
-$\[ y = x' \sin \theta + y' \cos \theta \quad (9) \]$
+$\[
+y = x' \sin \theta + y' \cos \theta \quad (9)
+\]$
 
 In matrix form:
 
-$\[ \begin{bmatrix}$ $x \\ y$ $\end{bmatrix}$ = $\begin{bmatrix}$ $\cos$ $\theta$ & -$\sin$ $\theta$ $\\$ $\sin$ $\theta$ & $\cos \theta \end{bmatrix}$ $\begin{bmatrix} x' \\ y' \end{bmatrix} \quad (10) \]$
+\[
+\begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} \cos \theta & -\sin \theta \\ \sin \theta & \cos \theta \end{bmatrix} \begin{bmatrix} x' \\ y' \end{bmatrix} \quad (10)
+\]
 
 These equations describe the transformation and its inverse in a 2D space after a counterclockwise rotation by an angle $\(\theta\)$.
+<br><br>
 
 # Lecture-15:
 # Lecture-16:
