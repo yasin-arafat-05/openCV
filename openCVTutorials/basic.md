@@ -104,8 +104,8 @@ Certainly! Let's derive the equations for a counterclockwise rotation in two dim
 ### Derivation of 2D Rotation Equations
 <br>
 
-In the xy system, a point P is represented by polar coordinates $\((r, \alpha)\)$. In the x'y' system, after a counterclockwise rotation by an angle $ \(\theta\) $, the polar coordinates become 
-$ \((r, \alpha - \theta)\) $.
+In the xy system, a point P is represented by polar coordinates $\((r, \alpha)\)$. In the x'y' system, after a counterclockwise rotation by an angle $\(\theta\)$, the polar coordinates become 
+$\((r, \alpha - \theta)\)$.
 
 Using trigonometric functions, the coordinates in the xy system are:
 
@@ -139,8 +139,8 @@ y' = -x \sin \theta + y \cos \theta \quad (6)
 
 These equations can be represented in matrix form as:
 
-$\[
-\begin{bmatrix} x' \\ y' \end{bmatrix} = \begin{bmatrix} \cos \theta & \sin \theta \\ -\sin \theta & \cos \theta \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} \quad (7)
+\[
+$\begin{bmatrix} x' \\ y' \end{bmatrix}$ = $\begin{bmatrix} \cos \theta & \sin \theta \\ -\sin \theta & \cos \theta \end{bmatrix}$ $\begin{bmatrix} x \\ y \end{bmatrix}$ \quad (7)
 \]$
 
 This matrix equation represents the standard form of a 2D rotation transformation.
