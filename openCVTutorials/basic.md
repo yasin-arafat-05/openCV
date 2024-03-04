@@ -122,17 +122,36 @@ python test.py (parameter) যা ইচ্ছে তাই দিব এইগ�
 
 # -------------------------------------------12-------------------------------------------------
 # Lecture-12:
-`Work with shpae like: line,rectange,circle,polygon, etc.`
+`Work with shpae like: Lines, Shapes, Polygons, Text etc.`
 
+### **Aliasing and Anti-aliasing:**
+Aliasing and anti-aliasing are concepts related to image processing and computer graphics, particularly when dealing with digital images. They describe phenomena associated with the representation and processing of visual information.<br>
+![Alt text](/openCVTutorials/photo/image12.png)
+<br>
+
+### **Aliasing:**
+Aliasing occurs when there is an insufficient sampling rate to accurately represent a signal (such as an image or waveform)
+
+### Anti-aliasing:**
+Anti-aliasing is a technique used to reduce or eliminate aliasing artifacts in digital images. It involves applying various methods to smooth out jagged edges and reduce the visual impact of aliasing.
 <br><br><br>
+
+#### In openCV in line() function we have three line type: <br> i) line_4  <br> ii) line_8  <br> iii) line_AA
+<br>
+
+![Alt text](/openCVTutorials/photo/image13.png)
+
+<br>
+
+`line_4 and line_8 is aliasing.` <br>
+`line_AA is anti-aliasing.` <br>
+<br>
 
 # -------------------------------------------13-------------------------------------------------
 # Lecture-13:
 `project: analog clock with openCV`
 
 <br><br><br>
-
-
 
 
 
