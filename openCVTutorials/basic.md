@@ -277,8 +277,15 @@ Shift an image in coordinate space by adding a specified value to the x and y co
 
 <br><br><br>
 
+
+# -------------------------------------------15-------------------------------------------------
+
 # Lecture-15:
 <br><br><br>
+
+
+
+# -------------------------------------------16-------------------------------------------------
 
 # Lecture-16:
 # Convolutions and Filtering:
@@ -340,14 +347,17 @@ output = cv2.filter2D(src,depth,kernel,anchor,border_type) <br>
 <br><br><br>
 
 
+# -------------------------------------------17-------------------------------------------------
+
 # Lecture-17:
 <br><br><br>
 
+
+
+# -------------------------------------------18-------------------------------------------------
+
 # Lecture-18:
+#  openCV Project: PHOTO to WATER COLOR ART
 <br><br><br>
 
-# Lecture-19:
-<br><br><br>
 
-# Lecture-20:
-<br><br><br>
