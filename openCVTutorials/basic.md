@@ -278,6 +278,9 @@ Shift an image in coordinate space by adding a specified value to the x and y co
 <br><br><br>
 
 # Lecture-15:
+<br><br><br>
+
+# Lecture-16:
 # Convolutions and Filtering:
 <br>
 
@@ -288,7 +291,7 @@ In convolution, we basically apply a mathematical operator to each pixel and cha
 `Calculation:`
 ![Alt text](/openCVTutorials/photo/image10.png)
 
-`কিন্তু আমরা যেহেতু, 3x3, 5x5 or oddxodd ব্যবহার করে  kernal এর middle point বরাবর output বসাচ্ছি, input এর শুরুতে যেইটা আছে সেইটা জন্য আমরা kearnal ব্যবহার করতে পারবো না । এর জন্য আমাদের padding with zero(i) এবং `
+`কিন্তু আমরা যেহেতু, 3x3, 5x5 or oddxodd ব্যবহার করে  kernal এর middle point বরাবর output বসাচ্ছি, input এর শুরুতে যেইটা আছে সেইটা জন্য আমরা kearnal ব্যবহার করতে পারবো না । এর জন্য আমাদের padding with zero(i) এবং wrap around (ii). `
 
 
 ## `Frequency of a image: `<br>
@@ -330,12 +333,12 @@ Frequency refers to the rate of change of pixel values. So we can say that the s
 **Function Used:**
 output = cv2.filter2D(src,depth,kernel,anchor,border_type) <br>
 
-**color depth in lecture: 06 -> No. of bits used to indicate teh color of a single image. Total depth = 3*8 = 24 bits.**
-
+**Color depth in lecture: 06 -> No. of bits used to indicate teh color of a single image. Total depth = 3*8 = 24 bits.**
+**kernal: -> matrix we see in Convolution** <br>
+**anchor:** In the cv2.filter2D() function in OpenCV, the anchor parameter represents the relative position of the anchor point within the kernel. The anchor point is the pixel in the kernel to which the convolution operation is applied to calculate the new value of the central pixel in the output image.<br>
+**border_type:** we see the padding with zero and wrap around. And there are few more in openCV.
 <br><br><br>
 
-# Lecture-16:
-<br><br><br>
 
 # Lecture-17:
 <br><br><br>
