@@ -201,9 +201,22 @@ image function তাই, আমাদের যেহেতু দুইটা 
 
 **Each pixel in the image is represented by a vector v ∈ V indicating the location of that pixel, and it is paired with c ∈ C, which indicates the color of that pixel**
 <br><br>
+
+### openCV Give us 5 types of interpolation: 
+
+- **Linear interpolation:**
+- **Area**
+- **Cuvic**
+- **Nearest Neighbor Interpolation**
+- **Sinusoidal Interpolation**
+
+`Example of linear interpolation: `
+<br>
+
 ![Alt text](/openCVTutorials/photo/image5.png)
 
 <br><br>
+
 # Lecture-15:
 # Lecture-16:
 # Lecture-17:
