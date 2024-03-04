@@ -293,8 +293,45 @@ In convolution, we basically apply a mathematical operator to each pixel and cha
 
 ## `Frequency of a image: `<br>
 
-Frequency refers to the rate of change of pixel values. So we can say that the sharp edges would be high frequency content because the pixel values change rapidly in that region. Going by that logic, plain areas would be low frequency content.
-`(যেমনঃ আমার  মাথার চুল আর মুখ যেইখানে মিলিত হয়েছে যেখানে(rate of change of pixel value বেশি) । কিন্তু যেইখানে শুধু চুল আর চুল সেইখানে (rate of change of pixel value কম ।) )।` 
+Frequency refers to the rate of change of pixel values. So we can say that the sharp edges would be **high frequency** content because the pixel values change rapidly in that region. Going by that logic, plain areas would be **low frequency** content.
+<br><br>
+
+`(যেমনঃ আমার  মাথার চুল আর মুখ যেইখানে মিলিত হয়েছে যেখানে(rate of change of pixel value বেশি) । কিন্তু যেইখানে শুধু চুল আর চুল সেইখানে (rate of change of pixel value কম ।)llow frequency reagion )।` 
+<br><br>
+
+**Low pass filter:** Low pass filter is the type of frequency domain filter that attenuates the high frequency components and preserves the low frequency components.<br>
+
+**Low pass Filters:**
+- It is used for smoothing the image.
+- It attenuates the high frequency.
+- It allows the frequency below cut off frequency to pass through it
+- It consists of resistor that is follwed by capacitor.
+- It helps in removal of aliasing effect.
+<br>
+<br>
+
+**High pass filter:** High pass filter is the type of frequency domain filter that attenuates the low frequency components and preserves the high frequency components.<br>
+
+**High pass Filters:**
+- It is used for sharpening the image.
+- It attenuates the low frequency.
+- High frequency is preserved in it.
+- It allows the frequencies above cut off frequency to pass through it.
+- It consists of capacitor that is follwed by a resistor.
+- It helps in removal of noise.
+<br>
+
+# Applying Custom Filters to Image:
+### Ex- Blurring an Image:
+
+![Alt text](/openCVTutorials/photo/image11.png)
+
+<br>
+**Function Used:**
+output = cv2.filter2D(src,depth,kernel,anchor,border_type) <br>
+
+**color depth in lecture: 06 -> No. of bits used to indicate teh color of a single image. Total depth = 3*8 = 24 bits.**
+
 <br><br><br>
 
 # Lecture-16:
