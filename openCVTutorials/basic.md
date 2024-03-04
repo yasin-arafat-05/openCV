@@ -101,6 +101,7 @@ python test.py (parameter) যা ইচ্ছে তাই দিব এইগ�
 **Mathematical Prove:**
 Certainly! Let's derive the equations for a counterclockwise rotation in two dimensions using markdown language.<br>
 
+### Roation করার জন্য আমাদের rotation matrix লাগবে যেইটা openCV তে implemented আছে । 
 ## Derivation of 2D Rotation Equations:
 <br>
 
@@ -215,6 +216,16 @@ image function তাই, আমাদের যেহেতু দুইটা 
 
 ![Alt text](/openCVTutorials/photo/image5.png)
 
+<br><br>
+
+# **Image Translation:**
+<br>
+
+Shift an image in coordinate space by adding a specified value to the x and y coordinate.
+
+![Alt text](/openCVTutorials/photo/image6.png)
+
+![Alt text](/openCVTutorials/photo/image7.png)
 <br><br>
 
 # Lecture-15:
