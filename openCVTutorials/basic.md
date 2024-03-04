@@ -278,6 +278,13 @@ Shift an image in coordinate space by adding a specified value to the x and y co
 <br><br><br>
 
 # Lecture-15:
+# Convolutions and Filtering:
+<br>
+
+## `Convolution:`
+In convolution, we basically apply a mathematical operator to each pixel and change its value in some way. To apply this mathematical operator, we use another matrix called a kernel.<br>
+![Alt text](/openCVTutorials/photo/image9.png)
+
 <br><br><br>
 
 # Lecture-16:
