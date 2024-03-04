@@ -4,12 +4,20 @@
 [playlistLink](https://www.youtube.com/watch?v=0XD-N9-rzSI&list=PLTXuqKbKkxkTy764PhX1yil5hj-5va099&ab_channel=Aryanverma)
 
 
+# -------------------------------------------01-------------------------------------------------
+
 # Lecture-01:
 - #### Introduction of the course:
+<br><br><br>
+
+# -------------------------------------------02-------------------------------------------------
 
 # Lecture-02:
 -   #### AI vs DL vs ML vs Computer-Vision:
 -   `****`
+<br><br><br>
+
+# -------------------------------------------03-------------------------------------------------
 
 # Lecture-03:
 - ### What is openCV?
@@ -45,34 +53,46 @@
     - objdetect
     - features2d
     - calib3d
-<br><br>
+<br><br><br>
 
+
+# -------------------------------------------04-------------------------------------------------
 # Lecture-04:
 ### **Application:**
 ![photoOne](/openCVTutorials/photo/photoOne.jpeg)
 ![photoTwo](/openCVTutorials/photo/photoTwo.jpeg)
 ![photoThree](/openCVTutorials/photo/photoThree.jpeg)
-<br><br>
+<br><br><br>
 
+
+# -------------------------------------------05-------------------------------------------------
 # Lecture-05:
 ### **Image:**
 ![photoFour](/openCVTutorials/photo/photoFour.jpeg)
 ![photoFive](/openCVTutorials/photo/photoFive.jpeg)
-<br><br>
+<br><br><br>
 
+
+# -------------------------------------------06-------------------------------------------------
 # Lecture-06:
 ### **Color Spaces:**
 ![photoSix](/openCVTutorials/photo/photoSix.jpeg)
-<br><br>
+<br><br><br>
+
+
+# -------------------------------------------07-------------------------------------------------
 
 # Lecture-07:
 ### Numpy-1
-<br><br>
+<br><br><br>
 
+
+# -------------------------------------------08-------------------------------------------------
 # Lecture-08:
 ### Numpy-2
-<br><br>
+<br><br><br>
 
+# -------------------------------------------09-------------------------------------------------
 # Lecture-09:
 ### **Virtual Environment:**
 `A Python virtual environment (venv) is simply a directory with a particular file structure.`
@@ -88,11 +108,36 @@ python test.py (parameter) যা ইচ্ছে তাই দিব এইগ�
 
 ### **Deactivate: venv**
 `deactivate`
+<br><br><br>
 
+# -------------------------------------------10-------------------------------------------------
 # Lecture-10:
+`Image and video read Write`
+<br><br><br>
+
+# -------------------------------------------11-------------------------------------------------
 # Lecture-11:
+`Project: reverse a video.`
+<br><br><br>
+
+# -------------------------------------------12-------------------------------------------------
 # Lecture-12:
+`Work with shpae like: line,rectange,circle,polygon, etc.`
+
+<br><br><br>
+
+# -------------------------------------------13-------------------------------------------------
 # Lecture-13:
+`project: analog clock with openCV`
+
+<br><br><br>
+
+
+
+
+
+# -------------------------------------------14-------------------------------------------------
+
 
 # Lecture-14:
 ### Rotation:
@@ -226,11 +271,23 @@ Shift an image in coordinate space by adding a specified value to the x and y co
 ![Alt text](/openCVTutorials/photo/image6.png)
 
 ![Alt text](/openCVTutorials/photo/image7.png)
-<br><br>
+
+<br><br><br>
 
 # Lecture-15:
+<br><br><br>
+
 # Lecture-16:
+<br><br><br>
+
 # Lecture-17:
+<br><br><br>
+
 # Lecture-18:
+<br><br><br>
+
 # Lecture-19:
+<br><br><br>
+
 # Lecture-20:
+<br><br><br>
