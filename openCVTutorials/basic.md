@@ -285,6 +285,16 @@ Shift an image in coordinate space by adding a specified value to the x and y co
 In convolution, we basically apply a mathematical operator to each pixel and change its value in some way. To apply this mathematical operator, we use another matrix called a kernel.<br>
 ![Alt text](/openCVTutorials/photo/image9.png)
 
+`Calculation:`
+![Alt text](/openCVTutorials/photo/image10.png)
+
+`কিন্তু আমরা যেহেতু, 3x3, 5x5 or oddxodd ব্যবহার করে  kernal এর middle point বরাবর output বসাচ্ছি, input এর শুরুতে যেইটা আছে সেইটা জন্য আমরা kearnal ব্যবহার করতে পারবো না । এর জন্য আমাদের padding with zero(i) এবং `
+
+
+## `Frequency of a image: `<br>
+
+Frequency refers to the rate of change of pixel values. So we can say that the sharp edges would be high frequency content because the pixel values change rapidly in that region. Going by that logic, plain areas would be low frequency content.
+`(যেমনঃ আমার  মাথার চুল আর মুখ যেইখানে মিলিত হয়েছে যেখানে(rate of change of pixel value বেশি) । কিন্তু যেইখানে শুধু চুল আর চুল সেইখানে (rate of change of pixel value কম ।) )।` 
 <br><br><br>
 
 # Lecture-16:
