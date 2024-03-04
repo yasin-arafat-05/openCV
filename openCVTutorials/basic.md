@@ -144,6 +144,9 @@ $\begin{bmatrix} x' \\ y' \end{bmatrix}$ = $\begin{bmatrix} \cos \theta & \sin \
 \]$
 
 This matrix equation represents the standard form of a 2D rotation transformation.
+![Alt text](/openCVTutorials/photo/image.png)
+
+<br><br>
 
 The inverse transformation is given by:
 
@@ -155,11 +158,11 @@ $\[
 y = x' \sin \theta + y' \cos \theta \quad (9)
 \]$
 
+<br><br>
+
 In matrix form:
 
-$\[
-\begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} \cos \theta & -\sin \theta \\ \sin \theta & \cos \theta \end{bmatrix} \begin{bmatrix} x' \\ y' \end{bmatrix} \quad (10)
-\]$
+![Alt text](/openCVTutorials/photo/image1.png)
 
 These equations describe the transformation and its inverse in a 2D space after a counterclockwise rotation by an angle $\(\theta\)$.
 <br><br>
