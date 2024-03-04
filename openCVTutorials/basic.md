@@ -96,10 +96,10 @@ python test.py (parameter) যা ইচ্ছে তাই দিব এইগ�
 
 # Lecture-14:
 ### Rotation:
-**Definition:** Rotation involves turning an object or image around a fixed point, known as the center of rotation.
-**Effect:** The image or object is rotated by a specified angle around the rotation center.
+**Definition:** Rotation involves turning an object or image around a fixed point, known as the center of rotation. <br>
+**Effect:** The image or object is rotated by a specified angle around the rotation center. <br>
 **Mathematical Prove:**
-Certainly! Let's derive the equations for a counterclockwise rotation in two dimensions using markdown language.
+Certainly! Let's derive the equations for a counterclockwise rotation in two dimensions using markdown language.<br>
 
 ### Derivation of 2D Rotation Equations
 <br>
