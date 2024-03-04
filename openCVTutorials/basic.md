@@ -101,7 +101,7 @@ python test.py (parameter) যা ইচ্ছে তাই দিব এইগ�
 **Mathematical Prove:**
 Certainly! Let's derive the equations for a counterclockwise rotation in two dimensions using markdown language.<br>
 
-### Derivation of 2D Rotation Equations
+## Derivation of 2D Rotation Equations:
 <br>
 
 In the xy system, a point P is represented by polar coordinates $\((r, \alpha)\)$. In the x'y' system, after a counterclockwise rotation by an angle $\(\theta\)$, the polar coordinates become 
@@ -139,10 +139,6 @@ y' = -x \sin \theta + y \cos \theta \quad (6)
 
 These equations can be represented in matrix form as:
 
-\[
-$\begin{bmatrix} x' \\ y' \end{bmatrix}$ = $\begin{bmatrix} \cos \theta & \sin \theta \\ -\sin \theta & \cos \theta \end{bmatrix}$ $\begin{bmatrix} x \\ y \end{bmatrix}$ \quad (7)
-\]$
-
 This matrix equation represents the standard form of a 2D rotation transformation.
 ![Alt text](/openCVTutorials/photo/image.png)
 
@@ -165,6 +161,7 @@ In matrix form:
 ![Alt text](/openCVTutorials/photo/image1.png)
 
 These equations describe the transformation and its inverse in a 2D space after a counterclockwise rotation by an angle $\(\theta\)$.
+
 <br><br>
 
 # Lecture-15:
