@@ -164,7 +164,7 @@ These equations describe the transformation and its inverse in a 2D space after 
 
 ### proof: 
 <br> <br>
-![Alt text](image.png)
+![Alt text](/openCVTutorials/photo/image3.png)
 <br><br>
 Clock wize হলে angle phi এর সামনে negative বসাবো । 
 <br><br>
@@ -186,6 +186,24 @@ In OpenCV, scaling refers to the process of resizing an image, changing its dime
 `aspect ratio = Width/Height.`
 <br>
 
+### Process :
+- Increasing or decreasing the pixels in digital image
+- We have an image and we Increase it (180%) 
+- then we resampling the image(**before interpolation picture:**  <br>
+আমরা যখন image এর height and width বাড়াবো তখন, pixel এর মধ্যেও  জায়গা  )
+- then we assign new grayvalues(By the help of `Interpolation.`)
+![Alt text](/openCVTutorials/photo/image4.png)
+
+# `Interpolation: `
+Interpolation is the process of estimating the values of a continous function from discreate samples. (আমরা জানি, image একটা function আর interpolation এর ক্ষেত্রে আমদের দুইটা পাশাপাশি pixel এর value দেওয়া আছে। কিন্তু আমাদের যেহেতু মাঝে space আসতেছে তাইলে এই space  এর মান বের করবো কিভাবে ?)
+image function তাই, আমাদের যেহেতু দুইটা pixel এর মান জানা আছে তাই মাঝখানে কোন value তা বসতে পারে তা estimate করতে পারবো । 
+<br>
+
+**Each pixel in the image is represented by a vector v ∈ V indicating the location of that pixel, and it is paired with c ∈ C, which indicates the color of that pixel**
+<br><br>
+![Alt text](/openCVTutorials/photo/image5.png)
+
+<br><br>
 # Lecture-15:
 # Lecture-16:
 # Lecture-17:
