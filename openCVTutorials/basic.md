@@ -162,6 +162,11 @@ In matrix form:
 
 These equations describe the transformation and its inverse in a 2D space after a counterclockwise rotation by an angle $\(\theta\)$.
 
+### proof: 
+<br> <br>
+![Alt text](image.png)
+<br><br>
+Clock wize হলে angle phi এর সামনে negative বসাবো । 
 <br><br>
 
 # Lecture-15:
