@@ -261,6 +261,9 @@ image function তাই, আমাদের যেহেতু দুইটা 
 
 ![Alt text](/openCVTutorials/photo/image5.png)
 
+## Scaling matrix: 
+![Alt text](/openCVTutorials/photo/image8.png)
+
 <br><br>
 
 # **Image Translation:**
