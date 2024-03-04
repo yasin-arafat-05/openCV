@@ -168,6 +168,23 @@ These equations describe the transformation and its inverse in a 2D space after 
 <br><br>
 Clock wize হলে angle phi এর সামনে negative বসাবো । 
 <br><br>
+<br><br>
+
+# Scaling: 
+
+<br> <br>
+
+### Fast we will know about zooming:
+
+- **Optical Zooming:** An Optical zoom means moving the zoom lens so that it increases the magnification of light before it even reaches the digital sensor. <br>
+
+- **Digital Zooming:** A digital zoom is not really zoom, it is simply **interpolating** the image after it has been acquired at the sensor(pixilation process). <br>
+<br><br>
+
+## **Scaling:**
+In OpenCV, scaling refers to the process of resizing an image, changing its dimensions while preserving its aspect ratio or adjusting the aspect ratio if necessary. <br>
+`aspect ratio = Width/Height.`
+<br>
 
 # Lecture-15:
 # Lecture-16:
