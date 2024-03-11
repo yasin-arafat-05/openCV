@@ -302,7 +302,44 @@ Shift an image in coordinate space by adding a specified value to the x and y co
 # Lecture-15:
 <br><br><br>
 
+# What is Geometric Transformation?
+Geometric transformation refers to the process of changing the arrangement, size, and orientation of objects in a geometric space. Modify Special Relationship between pixels. Image can be shifted, rotated and streatched in muyltiple ways.
 
+### Some common types of geometric transformations include:
+
+- **Translation:** Moving an object from one location to another without changing its shape or orientation.
+
+- **Rotation:** Turning an object around a fixed point, changing its orientation.
+
+- **Scaling:** Changing the size of an object, either uniformly or along different axes.
+
+- **Reflection:** Flipping an object across a line or plane, creating a mirror image.
+
+- **Shearing:** Distorting an object by shifting its parts along parallel lines.
+
+- **Affine Transformation:** A combination of translation, rotation, scaling, and shearing.
+
+`Euclidean and projective transformations are specific types of geometric transformations with distinct characteristics:`
+
+**Euclidean Transformation:**
+
+**Properties:** Preserves distances and angles. Objects undergo translations, rotations, and reflections.
+
+**Applications:** Used in computer vision, image processing, and computer graphics when maintaining geometric properties like distances and angles is crucial.
+
+**Representation:** Typically represented by a combination of translations and rotations, often described using transformation matrices.
+
+<br><br>
+
+**Projective Transformation (or Perspective Transformation):**
+
+**Properties:** Preserves straight lines but does not necessarily preserve angles, distances, or parallel lines. Objects undergo transformations that simulate perspective effects.
+
+**Applications:** Widely used in computer graphics, computer vision, and image processing when dealing with scenes observed from a specific viewpoint.
+
+**Representation:** Usually represented by a 3x3 matrix in homogeneous coordinates. Perspective transformations are common in applications such as 3D rendering, camera calibration, and augmented reality.
+
+<br>
 
 # -------------------------------------------16-------------------------------------------------
 
