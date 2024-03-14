@@ -339,7 +339,24 @@ Geometric transformation refers to the process of changing the arrangement, size
 
 **Representation:** Usually represented by a 3x3 matrix in homogeneous coordinates. Perspective transformations are common in applications such as 3D rendering, camera calibration, and augmented reality.
 
+<br> <br><br>
+
+
+### **Projective Transformation (or Perspective Transformation):**
+
+# Projective Transformation or Perspective Projection:
+
+### [Video_Link](https://www.youtube.com/watch?v=2BIzmFD_pRQ&ab_channel=ComputerVisionwithH%C3%BCseyin%C3%96zdemir)
+
+**Defination:** When we take photo with our camera, 3D scence is projected to 2D camera sensor. This mapping is called Perspective Projection.
+
 <br>
+
+একটা wall এর ছবি তুললাম ৩টা camera দিয়ে ৩ টা view point থেকে । 
+![Alt text](/openCVTutorials/photo/image14.png)
+যদি আমরা মাঝখানের camera এর  grid টা বানাতে চাই left and right camera এর ছবি দিয়ে তখন আমরা 
+projective transformation ব্যবহার করবো । 
+
 
 # -------------------------------------------16-------------------------------------------------
 
