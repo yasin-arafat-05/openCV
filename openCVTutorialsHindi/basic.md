@@ -60,23 +60,23 @@
 # Lecture-04:
 ### **Application:**
 ![photoOne](photo/photoOne.jpeg)
-![photoTwo](/openCVTutorials/photo/photoTwo.jpeg)
-![photoThree](/openCVTutorials/photo/photoThree.jpeg)
+![photoTwo](photo/photoTwo.jpeg)
+![photoThree](photo/photoThree.jpeg)
 <br><br><br>
 
 
 # -------------------------------------------05-------------------------------------------------
 # Lecture-05:
 ### **Image:**
-![photoFour](/openCVTutorials/photo/photoFour.jpeg)
-![photoFive](/openCVTutorials/photo/photoFive.jpeg)
+![photoFour](photo/photoFour.jpeg)
+![photoFive](photo/photoFive.jpeg)
 <br><br><br>
 
 
 # -------------------------------------------06-------------------------------------------------
 # Lecture-06:
 ### **Color Spaces:**
-![photoSix](/openCVTutorials/photo/photoSix.jpeg)
+![photoSix](photo/photoSix.jpeg)
 <br><br><br>
 
 
@@ -126,7 +126,7 @@ python test.py (parameter) যা ইচ্ছে তাই দিব এইগ�
 
 ### **Aliasing and Anti-aliasing:**
 Aliasing and anti-aliasing are concepts related to image processing and computer graphics, particularly when dealing with digital images. They describe phenomena associated with the representation and processing of visual information.<br>
-![Alt text](/openCVTutorials/photo/image12.png)
+![Alt text](photo/image12.png)
 <br>
 
 ### **Aliasing:**
@@ -139,7 +139,7 @@ Anti-aliasing is a technique used to reduce or eliminate aliasing artifacts in d
 #### In openCV in line() function we have three line type: <br> i) line_4  <br> ii) line_8  <br> iii) line_AA
 <br>
 
-![Alt text](/openCVTutorials/photo/image13.png)
+![Alt text](photo/image13.png)
 
 <br>
 
@@ -205,7 +205,7 @@ y' = -x \sin \theta + y \cos \theta \quad (6)
 These equations can be represented in matrix form as:
 
 This matrix equation represents the standard form of a 2D rotation transformation.
-![Alt text](/openCVTutorials/photo/image.png)
+![Alt text](photo/image.png)
 
 <br><br>
 
@@ -223,13 +223,13 @@ y = x' \sin \theta + y' \cos \theta \quad (9)
 
 In matrix form:
 
-![Alt text](/openCVTutorials/photo/image1.png)
+![Alt text](photo/image1.png)
 
 These equations describe the transformation and its inverse in a 2D space after a counterclockwise rotation by an angle $\(\theta\)$.
 
 ### proof: 
 <br> <br>
-![Alt text](/openCVTutorials/photo/image3.png)
+![Alt text](photo/image3.png)
 <br><br>
 Clock wize হলে angle phi এর সামনে negative বসাবো । 
 <br><br>
@@ -257,7 +257,7 @@ In OpenCV, scaling refers to the process of resizing an image, changing its dime
 - then we resampling the image(**before interpolation picture:**  <br>
 আমরা যখন image এর height and width বাড়াবো তখন, pixel এর মধ্যেও  জায়গা  )
 - then we assign new grayvalues(By the help of `Interpolation.`)
-![Alt text](/openCVTutorials/photo/image4.png)
+![Alt text](photo/image4.png)
 
 # `Interpolation: `
 Interpolation is the process of estimating the values of a continous function from discreate samples. (আমরা জানি, image একটা function আর interpolation এর ক্ষেত্রে আমদের দুইটা পাশাপাশি pixel এর value দেওয়া আছে। কিন্তু আমাদের যেহেতু মাঝে space আসতেছে তাইলে এই space  এর মান বের করবো কিভাবে ?)
@@ -278,10 +278,10 @@ image function তাই, আমাদের যেহেতু দুইটা 
 `Example of linear interpolation: `
 <br>
 
-![Alt text](/openCVTutorials/photo/image5.png)
+![Alt text](photo/image5.png)
 
 ## Scaling matrix: 
-![Alt text](/openCVTutorials/photo/image8.png)
+![Alt text](photo/image8.png)
 
 <br><br>
 
@@ -290,9 +290,9 @@ image function তাই, আমাদের যেহেতু দুইটা 
 
 Shift an image in coordinate space by adding a specified value to the x and y coordinate.
 
-![Alt text](/openCVTutorials/photo/image6.png)
+![Alt text](photo/image6.png)
 
-![Alt text](/openCVTutorials/photo/image7.png)
+![Alt text](photo/image7.png)
 
 <br><br><br>
 
@@ -353,7 +353,7 @@ Geometric transformation refers to the process of changing the arrangement, size
 <br>
 
 একটা wall এর ছবি তুললাম ৩টা camera দিয়ে ৩ টা view point থেকে । 
-![Alt text](/openCVTutorials/photo/image14.png)
+![Alt text](photo/image14.png)
 যদি আমরা মাঝখানের camera এর  grid টা বানাতে চাই left and right camera এর ছবি দিয়ে তখন আমরা 
 projective transformation ব্যবহার করবো । 
 
@@ -367,10 +367,10 @@ projective transformation ব্যবহার করবো ।
 
 ## `Convolution:`
 In convolution, we basically apply a mathematical operator to each pixel and change its value in some way. To apply this mathematical operator, we use another matrix called a kernel.<br>
-![Alt text](/openCVTutorials/photo/image9.png)
+![Alt text](photo/image9.png)
 
 `Calculation:`
-![Alt text](/openCVTutorials/photo/image10.png)
+![Alt text](photo/image10.png)
 
 `কিন্তু আমরা যেহেতু, 3x3, 5x5 or oddxodd ব্যবহার করে  kernal এর middle point বরাবর output বসাচ্ছি, input এর শুরুতে যেইটা আছে সেইটা জন্য আমরা kearnal ব্যবহার করতে পারবো না । এর জন্য আমাদের padding with zero(i) এবং wrap around (ii). `
 
@@ -408,7 +408,7 @@ Frequency refers to the rate of change of pixel values. So we can say that the s
 # Applying Custom Filters to Image:
 ### Ex- Blurring an Image:
 
-![Alt text](/openCVTutorials/photo/image11.png)
+![Alt text](photo/image11.png)
 
 <br>
 **Function Used:**
