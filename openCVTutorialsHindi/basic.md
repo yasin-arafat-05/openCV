@@ -59,7 +59,7 @@
 # -------------------------------------------04-------------------------------------------------
 # Lecture-04:
 ### **Application:**
-![photoOne](/openCVTutorials/photo/photoOne.jpeg)
+![photoOne](photo/photoOne.jpeg)
 ![photoTwo](/openCVTutorials/photo/photoTwo.jpeg)
 ![photoThree](/openCVTutorials/photo/photoThree.jpeg)
 <br><br><br>
