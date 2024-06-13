@@ -421,6 +421,7 @@ output = cv2.filter2D(src,depth,kernel,anchor,border_type) <br>
 <br><br><br>
 
 
+
 # -------------------------------------------17-------------------------------------------------
 
 # Lecture-17:
