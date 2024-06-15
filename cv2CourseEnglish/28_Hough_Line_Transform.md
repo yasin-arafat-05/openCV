@@ -10,9 +10,12 @@ Hough Transform is a popular technique to detect any shape if you can represent 
 
 # Basic of Hough Line Transform:
 
+A line can be represented by two equation i) Cartesian and ii) Polar . 
 
 ![Alt text](image-5.png)
 
 
+In, cartesian we can represented the line in `xy space` and `mc` space
 
+![Alt text](image-7.png)
 
