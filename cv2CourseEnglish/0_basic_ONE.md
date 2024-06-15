@@ -487,7 +487,7 @@ or
 - `sobel(sobelX and sobelY)`
 - `Laplacian Filters`
 
-![Alt text](image-3.png)
+![Alt text](photo1/image-3.png)
 
 sobelX and sobelY এর kernal গুলো এমন ভাবে তৈরি করা যে, এরা image intensity function এর derivative খুব easily calculate করে edge detect করে । 
 
