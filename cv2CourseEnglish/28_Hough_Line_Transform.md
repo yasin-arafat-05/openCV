@@ -15,7 +15,11 @@ A line can be represented by two equation i) Cartesian and ii) Polar .
 ![Alt text](image-5.png)
 
 
-In, cartesian we can represented the line in `xy space` and `mc` space
+In, cartesian we can represented the line in `xy space` and `mc space` 
 
 ![Alt text](image-7.png)
+
+If we have two point in `xy space, Xa and Ya` then the equation of the line in `mc space` given below,
+
+![Alt text](image-8.png)
 
