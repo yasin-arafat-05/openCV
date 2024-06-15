@@ -30,6 +30,15 @@ If we have sevral point of a line in `xy space` then in `mc space` the m and c i
 ![Alt text](image-9.png)
 
 
+In polar codinate system:
+
+![Alt text](image-10.png)
+
+Given, a point in `xy space` (8,6)  then the line represtation in  `r theta space`  is:
+
+![Alt text](image-11.png)
+
+
 
 <br>
 
