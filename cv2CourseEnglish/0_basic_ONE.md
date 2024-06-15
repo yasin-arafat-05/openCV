@@ -360,9 +360,11 @@ projective transformation ব্যবহার করবো ।
 
 # -------------------------------------------16-------------------------------------------------
 
+# অনেক অনেক গুরুত্বপূর্ণঃ 
+
 # Lecture-16:
 
-# Convolutions and Filtering:
+# Convolutions and Filtering: 
 <br>
 
 ## `Convolution:`
@@ -389,8 +391,12 @@ Frequency refers to the rate of change of pixel values. So we can say that the s
 - It is used for smoothing the image.
 - It attenuates the high frequency.
 - It allows the frequency below cut off frequency to pass through it
-- It consists of resistor that is follwed by capacitor.
 - It helps in removal of aliasing effect.
+
+### Some openCV function that uses low pass filter.
+`cv.blur(), cv.GaussainBlur(), cv.medianBlur(), cv.bilateralFilter()` all these function use for 
+bluring or smoothing the image.
+
 <br>
 <br>
 
@@ -400,9 +406,12 @@ Frequency refers to the rate of change of pixel values. So we can say that the s
 - It is used for sharpening the image.
 - It attenuates the low frequency.
 - High frequency is preserved in it.
-- It allows the frequencies above cut off frequency to pass through it.
-- It consists of capacitor that is follwed by a resistor.
 - It helps in removal of noise.
+
+### Some openCV function that uses high pass filter.
+`cv2.Laplacian(), cv2.Sobel(), cv2.Canny()` all these function use for detecting edge of the image.
+
+<br>
 <br>
 
 # Applying Custom Filters to Image:
@@ -450,8 +459,45 @@ output = cv2.filter2D(src,depth,kernel,anchor,border_type) <br>
 
 # -------------------------------------------20-------------------------------------------------
 
-# Lecture-20:
-#  openCV :
+# Lecture-20: Edge Detection(Sobel,Scharr,Laplacian)
+
+## What is edge Detection?
+
+`A high pass filtering operation.`
+
+or
+
+`The process of edge detection involves detecting sharp edges in the image and producing a binary image as the output. `
+
+- `sharp edge:` where the intensity of pixel is changing rapidly not changing color we should give ans like this a an openCV Engineer.
+
+- `Binary image: ` If we draw lines on a black background to indicate edges. 
+
+<br>
+
+![Alt text](photo1/image-1.png)
+
+`এখানে, কোন একটা pixel এ intensity হূট করেই change হচ্ছে । আমরা if-else condition দিয়ে এইটা define করতে পারবো না । কারণ, এখন যেই পয়েন্ট এ হয়েছে পরবর্তীতে সেইটা একটু দূরে হলে if-else কাজে আসবে না । তাই আমরা derivative use করবো, image intensity function এর । তাহলে সেই পয়েন্ট এ maximum value পাবো ।  `
+
+![Alt text](photo1/image-2.png)
+
+
+## Type of edge detection: 
+
+- `sobel(sobelX and sobelY)`
+- `Laplacian Filters`
+
+![Alt text](image-3.png)
+
+sobelX and sobelY এর kernal গুলো এমন ভাবে তৈরি করা যে, এরা image intensity function এর derivative খুব easily calculate করে edge detect করে । 
+
+`sobelX: আমরা যদি উপর থেকে ছবিতে লাইট ফেলতে পারি  X-axis এর edge গুলো  ভালোভাবে detect হবে  ।  sobelX কে এইটার সাথে তুলনা করতে পারি । `
+
+`sobelY: আমরা যদি ছবির পাশ থেকে লাইট ফেলতে পারি তাহলে Y-axis edge গুলো ভালোভাবে detect হবে । sobelY কে এইটার সাথে তুলনা করতে পারি । `
+
+দুইটাকে merge করে আমরা একটা ভালো রেজাল্ট পাই । কিন্তু, আমাদের ছবিতে অনেক noise থাকে তাই sobel তেমন ভালো করে না । এর develop version হিসেবে Laplacian এসেছে । 
+<br> 
+
 
 <br><br><br>
 
