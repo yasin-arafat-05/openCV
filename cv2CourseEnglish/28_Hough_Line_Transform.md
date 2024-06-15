@@ -55,4 +55,27 @@ And in the `r theta sapce ` the intercept represent a line in hough space.
 
 `OpenCV implements two kind of half line transforms the first is the standard Hough transform which is done using HalfLines method the second type is the probabilistic half line transform which is done by HalfLinesP method. `
 
+# More about hough line transform:
+
+In the context of the Hough transform, particularly for detecting lines in an image, the "r theta space" refers to the parameter space used in the Hough line transformation. Here's a breakdown:
+
+1. **Hough Transform Basics**: 
+   - The Hough transform is a technique used in image processing and computer vision to detect simple geometric shapes, such as lines or circles, within an image.
+
+2. **Parameter Space**:
+   - For detecting lines, the Hough transform uses a parameterization of lines in the form of $\( r, \theta \)$, where:
+     - $\( r \)$ is the distance from the origin to the closest point on the line.
+     - $\( \theta \)$ is the angle between the x-axis and the normal line connecting the origin to this closest point.
+
+3. **r theta Space**:
+   - The term "r theta space" (or $\( r, \theta \)$ space) specifically refers to the parameter space in which the Hough transform represents lines. 
+   - In this space, each point corresponds to a line in the original image. The Hough transform accumulates votes in this parameter space for each point that could lie on a line.
+
+4. **Accumulator Array**:
+   - To implement the Hough transform, typically an accumulator array (or Hough accumulator) is used, where each cell corresponds to a possible line in the image. The accumulator cells are incremented based on detected edge points that might lie on these lines.
+
+5. **Peak Detection**:
+   - After accumulating votes, peaks in the accumulator array indicate the parameters $\( r \)$ and $\( \theta \)$ of the lines present in the image. These peaks correspond to the lines detected by the Hough transform.
+
+Therefore, "r theta space" is essentially the Hough space or parameter space where the Hough transform operates to detect lines based on their $\( r \)$ (distance) and $\( \theta \)$ (angle) parameters. This space is crucial in understanding and implementing the Hough transform for line detection in images.
 
