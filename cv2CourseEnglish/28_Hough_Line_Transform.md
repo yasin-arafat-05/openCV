@@ -34,7 +34,7 @@ In polar codinate system:
 
 ![Alt text](image-10.png)
 
-Given, a point in `xy space` (8,6)  then the line represtation in  `r theta space`  is:
+Given, a point in `xy space` (8,6)  then the line represtation in  `r theta space`(Hough transform in the parameter space (often referred to as Hough space or r,θ space))  is:
 
 ![Alt text](image-11.png)
 
@@ -54,6 +54,11 @@ And in the `r theta sapce ` the intercept represent a line in hough space.
 <br>
 
 `OpenCV implements two kind of half line transforms the first is the standard Hough transform which is done using HalfLines method the second type is the probabilistic half line transform which is done by HalfLinesP method. `
+
+![Alt text](image-14.png)
+
+<br>
+
 
 # More about hough line transform:
 
