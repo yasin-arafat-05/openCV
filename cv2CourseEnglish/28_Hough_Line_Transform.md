@@ -39,6 +39,20 @@ Given, a point in `xy space` (8,6)  then the line represtation in  `r theta spac
 ![Alt text](image-11.png)
 
 
+for multiple lines:
+
+![Alt text](image-12.png)
+
+And in the `r theta sapce ` the intercept represent a line in hough space.
 
 <br>
+
+# Algorithrm of hough line transformation 
+
+![Alt text](image-13.png)
+
+<br>
+
+`OpenCV implements two kind of half line transforms the first is the standard Hough transform which is done using HalfLines method the second type is the probabilistic half line transform which is done by HalfLinesP method. `
+
 
