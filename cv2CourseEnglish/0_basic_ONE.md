@@ -536,7 +536,7 @@ sobelX and sobelY এর kernal গুলো এমন ভাবে তৈরি
 
 ![Alt text](image-6.png)
 
-উপরের ছবিতে অনেক ধরনের ফলের slice করা আছে । কিন্তু, Laplacian দিয়ে করলে এইটার edge অনেক মোটা হয় । পরের ছবিটা Canny Edge Detetion দিয়ে করা । যেইটাতে Edge গুলো অনেক বেশি  sharp হচ্ছে । 
+উপরের ছবিতে অনেক ধরনের ফলের slice করা আছে । কিন্তু, Laplacian দিয়ে করলে এইটার edge অনেক মোটা হয় । যার কারণে openCV তে আরো কয়েক ধরনের operation আছে যেইগুলো করা যায় না । পরের ছবিটা Canny Edge Detetion দিয়ে করা । যেইটাতে Edge গুলো অনেক বেশি  sharp হচ্ছে । 
 
 
 <br><br><br>
@@ -546,11 +546,28 @@ sobelX and sobelY এর kernal গুলো এমন ভাবে তৈরি
 
 # -------------------------------------------21-------------------------------------------------
 
-# Lecture-21:
-#  openCV:
+# Lecture-21: Canny Edge Detection
+
+## There are five steps in Canny Edge Detection:
+
+i) Noise Reduction : `We know noise is the combination of high and low intensity value in an image.For edge detection we need to remove noise . Otherwise low-high intesity palce consider as a edge. We apply Gaussian filer to remove noise.`
+
+ii) Gradient Calculation : `From sobelX and sobelY we calculate gradient or angle. This angle refer to the direction where the intensity of pixel changing. And gradient is always perpendicular to the edge. `
+
+- `Gradient Direction: The gradient direction refers to the direction in which the intensity of the image changes most rapidly. This direction is perpendicular to the edge at that point. Essentially, the gradient points in the direction of the greatest rate of increase in intensity.`
+
+- `Perpendicular to the Edge: The gradient vector (which has both magnitude and direction) is indeed perpendicular to the edge at each point. This means if you imagine an edge as a line across the image, the gradient vector points directly across the edge, from one side to the other.`
+
+iii) Non-Maximum Supperession : ` শুরুতে আমরা sobel ব্যবহার করি । আমাদের  edge  গুলো অনেক মোটা হয়ে যায় sobelX and sobelY use করার কারণে । একে আমরা চিকন করি Non-Maximum Supperession এর মাধ্যমে । sobel এর মাধ্যমে আমরা যেই edge গুলো পায় আমরা Gradient এর সাহাযে সবগুলো edge point কে traverse করি আশে পাশের pixel গুলোর মধ্যে যাদের pixel এর মান ওঠানামা করছে তাদের color কে black করে দেয়া হয় ।  আর যারা থাকে তারাই সেই pixel গুলোয় হচ্ছে আমাদের  edge । `
+
+iv) Double Thresholding : `For this step we need two threshold values, minVAl and maxVal. Any edges with intensity gradient more than maxVal are sure to be edges and those below minVal are non-edges, so discarded. Those who lie between these two thresholds are classified, edges or non-edge based on their connectivity (in the next setp).`
+
+v) Edge Tracking by Hysteresis: `আমাদের যেই Edge গুলো threshold minVAl and maxVAL এর মাঝখানে পড়ে তাদের সাথে যদি কোন Edge এর connectivity থাকে তাহকে তাদেরকে edges আর না থাকলে non-edge হিসেবে গণ্য করা হয় ।   `
+
+![Alt text](photo1/image-7.png)
+
 
 <br><br><br>
-
 
 
 
