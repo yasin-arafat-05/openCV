@@ -427,6 +427,31 @@ output = cv2.filter2D(src,depth,kernel,anchor,border_type) <br>
 **kernal: -> matrix we see in Convolution** <br>
 **anchor:** In the cv2.filter2D() function in OpenCV, the anchor parameter represents the relative position of the anchor point within the kernel. The anchor point is the pixel in the kernel to which the convolution operation is applied to calculate the new value of the central pixel in the output image.<br>
 **border_type:** we see the padding with zero and wrap around. And there are few more in openCV.
+
+<br> <br>
+
+# Depth in details:
+
+In OpenCV (Open Source Computer Vision Library), "depth" generally refers to the number of bits used to represent each pixel in an image or the datatype used to store pixel values. It determines the range of values that each pixel can take and is crucial for accurately representing images, especially when dealing with different types of images (grayscale, color, etc.) and processing operations.
+
+In the context of OpenCV in Python, depth can be understood in a few different ways:
+
+1. **Image Depth:** This refers to the number of bits used to represent each pixel in an image. Common depths include:
+   - 8-bit unsigned integers (uint8): This is typical for grayscale images where pixel values range from 0 to 255.
+   - 16-bit unsigned integers (uint16): Used in applications where more precision is needed, such as medical imaging.
+   - 32-bit floating point numbers (float32): Used when high precision is required, especially in scientific and computational applications.
+
+2. **Data Type in OpenCV:** When working with images in OpenCV, each pixel's value is stored according to a specific data type, which influences the range of values that pixel can take. For example:
+   - `cv2.CV_8U`: Represents unsigned 8-bit images (0 to 255).
+   - `cv2.CV_16U`: Represents unsigned 16-bit images (0 to 65535).
+   - `cv2.CV_32F`: Represents floating point images.
+
+3. **Channel Depth:** In the case of multi-channel images (such as RGB color images), the depth refers to the number of color channels (e.g., 3 channels for RGB images).
+
+
+
+
+
 <br><br><br>
 
 
@@ -491,12 +516,27 @@ or
 
 sobelX and sobelY এর kernal গুলো এমন ভাবে তৈরি করা যে, এরা image intensity function এর derivative খুব easily calculate করে edge detect করে । 
 
+
+![Alt text](photo1/image-4.png)
+
+
 `sobelX: আমরা যদি উপর থেকে ছবিতে লাইট ফেলতে পারি  X-axis এর edge গুলো  ভালোভাবে detect হবে  ।  sobelX কে এইটার সাথে তুলনা করতে পারি । `
 
 `sobelY: আমরা যদি ছবির পাশ থেকে লাইট ফেলতে পারি তাহলে Y-axis edge গুলো ভালোভাবে detect হবে । sobelY কে এইটার সাথে তুলনা করতে পারি । `
 
-দুইটাকে merge করে আমরা একটা ভালো রেজাল্ট পাই । কিন্তু, আমাদের ছবিতে অনেক noise থাকে তাই sobel তেমন ভালো করে না । এর develop version হিসেবে Laplacian এসেছে । 
+দুইটাকে merge করে আমরা একটা ভালো রেজাল্ট পাই । কিন্তু, আমাদের ছবিতে অনেক noise থাকে তাই sobel তেমন ভালো performance করে না । আমাদের  edge  গুলো অনেক মোটা হয়ে যায়  । এর develop version হিসেবে Laplacian এসেছে । 
+
 <br> 
+
+# Laplacian Filter:
+
+![Alt text](photo1/image-5.png)
+
+`Laplacian 2nd order derivative use করে । X-axis and y-axis  দুই direction  এই ।  `
+
+![Alt text](image-6.png)
+
+উপরের ছবিতে অনেক ধরনের ফলের slice করা আছে । কিন্তু, Laplacian দিয়ে করলে এইটার edge অনেক মোটা হয় । পরের ছবিটা Canny Edge Detetion দিয়ে করা । যেইটাতে Edge গুলো অনেক বেশি  sharp হচ্ছে । 
 
 
 <br><br><br>
