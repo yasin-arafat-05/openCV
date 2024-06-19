@@ -624,6 +624,47 @@ v) Edge Tracking by Hysteresis: `আমাদের যেই Edge গুলো 
 
 ![Alt text](photo1/image-9.png)
 
+**Frequency:** The number of pixels for each intensity value is called frequency.
+
+**Bins:** The histograms show the number of pixels (frequency) for every intensity value, ranging from 0 to 255. Each of these 256 values is called a bin in histogram terminology.
+
+<br>
+
+### What is brightness:
+
+![Alt text](photo1/image-10.png)
+
+`m is the number of column and n is the number of row. I(x,y) Intensity value of that pixel.`
+
+<br>
+
+### Histrogram for gray scale image:
+
+
+![Alt text](photo1/image-11.png)
+
+`1st graph is for a gray scale image. If we increase the brightness then the graph shifted in the positive direction and if we decrease the brightness(draken the image) then the graph shifted i the negative direction.`
+
+### How to find the optimam value of the shifted graph? 
+
+- ` By the help of histrogram equalization.`
+
+<br>
+
+### For colord image: 
+
+![Alt text](image-12.png)
+
+<br>
+
+### Histrogram Equlization:
+
+![Alt text](photo1/image-13.png)
+
+
+
+<br>
+
 <br><br><br>
 
 
