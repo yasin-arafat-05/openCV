@@ -659,18 +659,28 @@ v) Edge Tracking by Hysteresis: `আমাদের যেই Edge গুলো 
 
 ### Histrogram Equlization:
 
+#### for gray scale image:
+
 ![Alt text](photo1/image-13.png)
 
+`Here, in first image we have no distribution in the range(0~50) but after appling the histrogram equalization the distribution become in the range(0~255). As the 2nd image distribution range(0~255) it's give us more contrast image.`
 
+#### for colored image:
+
+![Alt text](image-14.png)
+
+`First, we seperate the each color channel then we apply the historgam equalization.`
 
 <br>
+
+`But histrogram equalization is not the best aproach. We will see better aproach in the next lecture.`
 
 <br><br><br>
 
 
 # -------------------------------------------26-------------------------------------------------
 
-# Lecture-22:
+# Lecture-22: 
 #  openCV :
 
 <br><br><br>
