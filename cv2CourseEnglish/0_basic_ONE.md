@@ -681,7 +681,32 @@ v) Edge Tracking by Hysteresis: `আমাদের যেই Edge গুলো 
 # -------------------------------------------26-------------------------------------------------
 
 # Lecture-22: 
-#  openCV :
+
+- `AHE: Adaptive Histrogram Equalization.`
+- `CLAHE : Contrast Limited Adaptive Histrogram Equalization.`
+
+<br>
+
+
+![Alt text](photo1/image-15.png)
+
+`আমরা আগের এ দেখেছি যদি Histrogram Equalization ব্যবহার করলে distribution এর range(0~255) হয় । এর ফলে ছবির contrast বাড়ে । উপরের ছবিতে Contrast এমন ভাবে বেড়ে গেছে যে ছবিতে অনেক চলে এসেছে । এর জন্য আমরা AHE ব্যবহার করি । AHE এ আমাদের ছবি গুলোকে আমরা অনেক গুলো ভাগ করি তারপর আমরা সেখানে Histrogram Equalization ব্যবহার করি । এর ফলে আমাদের ছবিঃ `
+
+![Alt text](photo1/image-16.png)
+
+<br>
+
+### Problem with AHE:
+
+![Alt text](photo1/image-17.png)
+
+`This is the original image. Here, this is its histogram equalization image. If you see this, there is a small statue placed in the middle. The eyes, nose and mouth of the statue are not visible but histogram equalization. According to histrogram equalizaton, the contraption is cement, which means its eyes, nose, ears and mouth should have been more visible, but what happened here, it became dirty and if I use adaptive histrogram equalization is become more dirty.`
+
+For this problem we need CLAHE(Contrast Limited Adaptive Histrogram Equalization)
+
+<br>
+
+
 
 <br><br><br>
 
