@@ -680,7 +680,7 @@ v) Edge Tracking by Hysteresis: `আমাদের যেই Edge গুলো 
 
 # -------------------------------------------26-------------------------------------------------
 
-# Lecture-22: 
+# Lecture-26: 
 
 - `AHE: Adaptive Histrogram Equalization.`
 - `CLAHE : Contrast Limited Adaptive Histrogram Equalization.`
@@ -702,11 +702,18 @@ v) Edge Tracking by Hysteresis: `আমাদের যেই Edge গুলো 
 
 `This is the original image. Here, this is its histogram equalization image. If you see this, there is a small statue placed in the middle. The eyes, nose and mouth of the statue are not visible but histogram equalization. According to histrogram equalizaton, the contraption is cement, which means its eyes, nose, ears and mouth should have been more visible, but what happened here, it became dirty and if I use adaptive histrogram equalization is become more dirty.`
 
-For this problem we need CLAHE(Contrast Limited Adaptive Histrogram Equalization)
+For this problem we need CLAHE(Contrast Limited Adaptive Histrogram Equalization) <br>
+
+
+![Alt text](photo1/image-18.png)
+
+`এখানে আমরা একটা contrast limit add করি । যদি আমাদের histogram bin আমাদের contrast limit  কে cross করে তাহলে, সেই গুলোকে গ্রাফের নিচের দিকে distribute করে । `
+
+Now, see the result:
+
+![Alt text](photo1/image-19.png)
 
 <br>
-
-
 
 <br><br><br>
 
