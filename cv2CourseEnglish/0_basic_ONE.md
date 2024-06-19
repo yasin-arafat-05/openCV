@@ -579,3 +579,59 @@ v) Edge Tracking by Hysteresis: `আমাদের যেই Edge গুলো 
 <br><br><br>
 
 
+
+# -------------------------------------------23-------------------------------------------------
+
+# Lecture-22:
+#  openCV :
+
+<br><br><br>
+
+
+
+# -------------------------------------------24-------------------------------------------------
+
+# Lecture-22:
+#  openCV :
+
+<br><br><br>
+
+
+# -------------------------------------------25-------------------------------------------------
+
+# Lecture-25:
+- `A theoretical introduction to histrogram.`
+- `Image Histrogram.`
+- `Grayscale Histrogram.`
+- `What is brightness.`
+- `Color Histrogram.`
+- `Histrogram Equalization.`
+
+### Histrogram:
+
+`A histogram is a bar graph-like representation of data that a range of outcomes into columns along the x axis and the number of count or frequency in the y-axis.`
+
+![Alt text](photo1/image-8.png)
+
+<br>
+
+### What is a image Histrogram:
+
+`An image histogram is a graphical representation of the number of pixels in an image as a function of their intensity.`
+<br>
+
+`Histograms are made up of bins, each bin representing a certain intensity value range. The histogram is computed by examining all pixels in the image and assigning each to a bin depending on the pixel intensity. The final value of a bin is the number of pixels assigned to it. The number of bins in which the whole intensity range is divided is usually in the order of the square root of the number of pixels.`
+
+![Alt text](photo1/image-9.png)
+
+<br><br><br>
+
+
+# -------------------------------------------26-------------------------------------------------
+
+# Lecture-22:
+#  openCV :
+
+<br><br><br>
+
+
