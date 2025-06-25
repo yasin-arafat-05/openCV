@@ -1,4 +1,7 @@
- # How to install python opncv
+
+# Computer Vison:
+
+### `#01: How to install python opncv in venv:`
 
  ```python
 
@@ -6,11 +9,13 @@
 
  ```
 
-
-### In arch linux: 
+### `02: In arch linux globally installation:`
 
  ```python
 
  sudo pacman -S python-opencv
 
  ```
+
+
+
