@@ -14,8 +14,12 @@
  ```python
 
  sudo pacman -S python-opencv
-
+ ```
+ **Install this package for running Opencv in archlinux with any warring.**
+ ```python
+ sudo pacman -S qt5-base qt5-wayland
  ```
 
+ 
 
 
