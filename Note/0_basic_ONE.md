@@ -166,38 +166,38 @@ Certainly! Let's derive the equations for a counterclockwise rotation in two dim
 ## Derivation of 2D Rotation Equations:
 <br>
 
-In the xy system, a point P is represented by polar coordinates $\((r, \alpha)\)$. In the x'y' system, after a counterclockwise rotation by an angle $\(\theta\)$, the polar coordinates become 
-$\((r, \alpha - \theta)\)$.
+In the xy system, a point P is represented by polar coordinates $((r, \alpha))$. In the x'y' system, after a counterclockwise rotation by an angle $(\theta)$, the polar coordinates become 
+$((r, \alpha - \theta))$.
 
 Using trigonometric functions, the coordinates in the xy system are:
 
-$\[
+$[
 x = r \cos \alpha \quad (1)
-\]$
+]$
 
-$\[
+$[
 y = r \sin \alpha \quad (2)
-\]$
+]$
 
 Now, applying trigonometric identities for differences, the coordinates in the x'y' system are:
 
-$\[
+$[
 x' = r \cos(\alpha - \theta) = r \cos \alpha \cos \theta + r \sin \alpha \sin \theta \quad (3)
-\]$
+]$
 
-$\[
+$[
 y' = r \sin(\alpha - \theta) = r \sin \alpha \cos \theta - r \cos \alpha \sin \theta \quad (4)
-\]$
+]$
 
 Substituting equations (1) and (2) into equations (3) and (4), we get:
 
-$\[
+$[
 x' = x \cos \theta + y \sin \theta \quad (5)
-\]$
+]$
 
-$\[
+$[
 y' = -x \sin \theta + y \cos \theta \quad (6)
-\]$
+]$
 
 These equations can be represented in matrix form as:
 
@@ -208,13 +208,13 @@ This matrix equation represents the standard form of a 2D rotation transformatio
 
 The inverse transformation is given by:
 
-$\[
+$[
 x = x' \cos \theta - y' \sin \theta \quad (8)
-\]$
+]$
 
-$\[
+$[
 y = x' \sin \theta + y' \cos \theta \quad (9)
-\]$
+]$
 
 <br><br>
 
@@ -354,8 +354,13 @@ Geometric transformation refers to the process of changing the arrangement, size
 যদি আমরা মাঝখানের camera এর  grid টা বানাতে চাই left and right camera এর ছবি দিয়ে তখন আমরা 
 projective transformation ব্যবহার করবো । 
 
+<br>
+<br>
 
-# -------------------------------------------16-------------------------------------------------
+# --------------------------------------------16--------------------------------------------------
+
+<br>
+<br>
 
 # অনেক অনেক গুরুত্বপূর্ণঃ 
 
@@ -364,7 +369,14 @@ projective transformation ব্যবহার করবো ।
 # Convolutions and Filtering: 
 <br>
 
-## `Convolution:`
+
+<br>
+<br>
+
+# `16.1 Convolution:`
+
+<br>
+
 In convolution, we basically apply a mathematical operator to each pixel and change its value in some way. To apply this mathematical operator, we use another matrix called a kernel.<br>
 ![Alt text](photo1/image9.png)
 
@@ -417,12 +429,17 @@ bluring or smoothing the image.
 ![Alt text](photo1/image11.png)
 
 <br>
-**Function Used:**
-output = cv2.filter2D(src,depth,kernel,anchor,border_type) <br>
 
-**Color depth in lecture: 06 -> No. of bits used to indicate the color of a single image. Total depth = 3*8 = 24 bits.**
+**Function Used:**
+
+```python
+output = cv2.filter2D(src,depth,kernel,anchor,border_type)
+```
+ <br>
+
+**Color depth in lecture: 06 -> No. of bits used to indicate the color of a single image. Total depth = 3*8 = 24 bits.** <br>
 **kernal: -> matrix we see in Convolution** <br>
-**anchor:** In the cv2.filter2D() function in OpenCV, the anchor parameter represents the relative position of the anchor point within the kernel. The anchor point is the pixel in the kernel to which the convolution operation is applied to calculate the new value of the central pixel in the output image.<br>
+**anchor:** ```python In the cv2.filter2D() ``` function in OpenCV, the anchor parameter represents the relative position of the anchor point within the kernel. The anchor point is the pixel in the kernel to which the convolution operation is applied to calculate the new value of the central pixel in the output image.<br>
 **border_type:** we see the padding with zero and wrap around. And there are few more in openCV.
 
 <br> <br>
@@ -446,7 +463,60 @@ In the context of OpenCV in Python, depth can be understood in a few different w
 3. **Channel Depth:** In the case of multi-channel images (such as RGB color images), the depth refers to the number of color channels (e.g., 3 channels for RGB images).
 
 
+<br>
+<br>
 
+# `16.2 Low pass filter:`
+
+<br>
+
+**Low pass filter:** Low pass filter is the type of frequency domain filter that attenuates the high frequency components and preserves the low frequency components.<br>
+
+**Low pass Filters:**
+- It is used for smoothing the image.
+- It attenuates the high frequency.
+- It allows the frequency below cut off frequency to pass through it
+- It helps in removal of aliasing effect.
+
+<br>
+
+![image](photo/image-8.png)
+<br>
+
+<br>
+
+![image](photo/image-9.png)
+<br>
+<br>
+
+![image](photo/image-10.png)
+<br>
+<br>
+
+![image](photo/image-11.png)
+<br>
+<br>
+
+![image](photo/image-12.png)
+<br>
+
+<br>
+<br>
+
+## `#17.3: High Pass filer`
+
+**High pass filter:** High pass filter is the type of frequency domain filter that attenuates the low frequency components and preserves the high frequency components.<br>
+
+**High pass Filters:**
+- It is used for sharpening the image.
+- It attenuates the low frequency.
+- High frequency is preserved in it.
+- It helps in removal of noise.
+
+### Some openCV function that uses high pass filter.
+`cv2.Laplacian(), cv2.Sobel(), cv2.Canny()` all these function use for detecting edge of the image. More see the 20 and 21. 
+
+<br>
 
 
 <br><br><br>
@@ -531,7 +601,7 @@ sobelX and sobelY এর kernal গুলো এমন ভাবে তৈরি
 
 `Laplacian 2nd order derivative use করে । X-axis and y-axis  দুই direction  এই ।  `
 
-![Alt text](image-6.png)
+![Alt text](photo1/image-6.png)
 
 উপরের ছবিতে অনেক ধরনের ফলের slice করা আছে । কিন্তু, Laplacian দিয়ে করলে এইটার edge অনেক মোটা হয় । যার কারণে openCV তে আরো কয়েক ধরনের operation আছে যেইগুলো করা যায় না । পরের ছবিটা Canny Edge Detetion দিয়ে করা । যেইটাতে Edge গুলো অনেক বেশি  sharp হচ্ছে । 
 
@@ -650,7 +720,7 @@ v) Edge Tracking by Hysteresis: `আমাদের যেই Edge গুলো 
 
 ### For colord image: 
 
-![Alt text](image-12.png)
+![Alt text](photo1/image-12.png)
 
 <br>
 
@@ -664,7 +734,7 @@ v) Edge Tracking by Hysteresis: `আমাদের যেই Edge গুলো 
 
 #### for colored image:
 
-![Alt text](image-14.png)
+![Alt text](photo1/image-14.png)
 
 `First, we seperate the each color channel then we apply the historgam equalization.`
 
@@ -713,5 +783,62 @@ Now, see the result:
 <br>
 
 <br><br><br>
+
+
+# -------------------------------------------27-------------------------------------------------
+
+# Lecture-27: 
+
+- `Morphological Operation`
+- `Morphological Reconstruction`
+
+<br>
+
+# `27.1 Morphological Operation`
+
+<br>
+
+### `4 types of Morphological Operation:`
+
+- `Erosion`
+- `Dilation`
+- `Opening`
+- `Closing`
+
+`Morphological transformations are some simple operations based on the image shape now morphological transformation is normally performed on a **binary image*.* and when we perform morphological transformation there are **two things** which are required first is the original image and second is called a structuring element or a kernel which decides the nature of the operation.`
+
+
+<br>
+
+![image](photo/image-13.png)
+
+<br>
+
+This refelction and translation is used in structring element(se). Now what is structring element?
+In image segmentation or inhancement we use kernal. Here, SE do the same job. 
+- SE is a small set to probe**(The structuring element (SE) moves over the image pixel by pixel, testing or examining how the local neighborhood of pixels matches the SE’s shape)** the image under study.
+- For each structuring elemetn we define the origin. Like in convolutional operation, (3x3) middle point is your origin.
+- The shape and size must be adapted to geometric properties for the objects. 
+- We check for three conditions while applying the SE.
+   - Fit
+   - Hit
+   - Miss
+
+<br>
+
+![image](photo/image-15.png)
+
+<br>
+
+![image](photo/image-16.png)
+
+<br>
+
+Morphological Operation: 
+- Diation 
+- Erosion
+
+<br>
+
 
 
